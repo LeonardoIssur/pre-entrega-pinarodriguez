@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>Inicio</title>
+</head>
+<body>
+    <header class="header-inicio">
+        <div class="titulo-inicio">
+            <h1>San Gil</h1>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./paginas/restaurantes.html">Restaurantes</a></li>
+                <li><a href="./paginas/hoteles.html">Hoteles</a></li>
+                <li><a href="./paginas/actividades.html">Actividades</a></li>
+                <li><a href="./paginas/acerca-de.html">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="aventura">
+            <h2>Atrevete a vivir la aventura</h2>
+            <div class="container-inicio">
+                <div class="infor">
+                    <img src="../proyec-1/imagenes/img-gastronomia.jpg" alt="#">
+                    <h3>Gastronomia</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti molestias deserunt quod nihil, debitis veritatis dolore pariatur aliquam laudantium in, est accusantium laboriosam voluptate dolorem iusto fugiat cum cumque provident.</p>
+                </div>
+                <div class="infor">
+                    <img src="../proyec-1/imagenes/img-turismo.png" alt="#">
+                    <h3>Turismo</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti molestias deserunt quod nihil, debitis veritatis dolore pariatur aliquam laudantium in, est accusantium laboriosam voluptate dolorem iusto fugiat cum cumque provident.</p>
+                </div>
+                <div class="infor">
+                    <img src="../proyec-1/imagenes/img-aventura.png" alt="#">
+                    <h3>Aventura</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti molestias deserunt quod nihil, debitis veritatis dolore pariatur aliquam laudantium in, est accusantium laboriosam voluptate dolorem iusto fugiat cum cumque provident.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="formulario_img"></div>
+            <div class="formulario">
+                <h2>Contacto</h2>
+                <form action="procesar.php" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                    
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="formulario_img_abajo"></div>
+        </section>
+        <footer>
+            <h2>Una experiencia creada para ti</h2>
+            <hr>
+            <div class="footer">
+                <div class="footer-sec">
+                    <h4>¿Que hacer?</h4>
+                    <ul>
+                        <li><a href="">Excursiones</a></li>
+                        <li><a href="">Balnearios</a></li>
+                        <li><a href="">Deportes</a></li>
+                        <li><a href="">Atracciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-sec">
+                    <h4>Tips de viaje</h4>
+                    <ul>
+                        <li><a href="">Clima</a></li>
+                        <li><a href="">Aspectos de seguridad</a></li>
+                        <li><a href="">Servicios bancarios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-sec">
+                    <h4>Destinos relacionados</h4>
+                    <ul>
+                        <li><a href="">Barichara</a></li>
+                        <li><a href="">curiti</a></li>
+                        <li><a href="">Guane</a></li>
+                        <li><a href="">P. Nacional Chicamocha</a></li>
+                    </ul>
+                </div>
+                <div class="footer-sec">
+                    <h4>Redes sociales</h4>
+                    <ul>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">Youtube</a></li>
+                        <li><a href="">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </footer>
+    </main>
+</body>
+</html>
