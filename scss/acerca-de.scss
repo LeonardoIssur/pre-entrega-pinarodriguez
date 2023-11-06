@@ -1,0 +1,83 @@
+#infoAcercaDe{
+    display: flex;
+    flex-flow: column;
+        .info-acerca-de-sec{
+            flex: 1 1 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 40px 30px;
+            padding: 40px 30px;
+                .img-acerca-de{
+                    flex: 1 1 auto;
+                    width: 100%;
+                }
+                .img-acerca-de2{
+                    flex: 1 1 auto;
+                    width: 100%;
+                }
+                .info-acerca-de{
+                    display: flex;
+                    flex: 1 1 auto;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    text-align: center;
+                        .btn-ver-mas{
+                            color: #fff;
+                            background-color: $color-primary;
+                            font-size: 18px;
+                            border: none;
+                            border-radius: 12px;
+                            margin: 30px;
+                            padding: 5px 25px;
+                            &:hover{
+                                background-color: $color-secondary;
+                            }
+                        }
+                        p{
+                            width: 40%;
+                        }
+                        h2{
+                            font-size: 4vw;
+                            font-size: 4vh;
+                            margin: 30px;
+                        }
+                }
+        }
+}
+.conoce-sobre-san{
+    width: 90%;
+    height: auto;
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle at -14.09% 20.12%, #d9c15a 0, #e0b852 8.33%, #e5ae4b 16.67%, #eaa345 25%, #ee9641 33.33%, #f0883d 41.67%, #f2793c 50%, #f3683d 58.33%, #f35741 66.67%, #f34548 75%, #f33050 83.33%, #f1145a 91.67%, #ed0065 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+        h3{
+            font-size: 35px;
+            margin: 10px;
+            color: #001f36;
+        }
+        h2{
+            font-weight: 700;
+            font-size: 50px;
+            margin: 10px;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+        }
+}
+.videos-acerca-de{
+    display: flex;
+    flex-direction: row;
+        .sec-videos-acerca-de{
+            flex: 1 1 auto;
+            margin: 40px 15px;
+        }
+}
+

@@ -1,0 +1,243 @@
+                          //------------------- breakpoint de la pagina home ----------------- //
+
+@media (max-width: 1200px){
+    #menuAventura{
+            h2{
+                padding: 0px;
+                margin: 20px;
+            }
+            .container-inicio{
+                flex-flow: column nowrap;
+                    h3{
+                        margin: 50px;
+                    }
+                    p{
+                        text-align: center;
+                        margin: 40px 15%;
+                    }
+                    .infor{
+                        flex: 1 1 auto;
+                            p{
+                                width: 70%;
+                                text-align: center;
+                            }
+                            img{
+                                width: 35%;
+                                height: 15%;
+                            }
+                    }
+            }
+    }
+}
+@media (min-width: 1px){
+    .dropdown{
+        display: none;
+    }
+}
+@media (max-width: 690px){
+    .navbar{
+        display: none;
+    }
+    .dropdown{
+        display: flex;
+        position: fixed;
+        margin: 10px;
+        top: 0;
+        right: 0;
+        z-index: 3000;
+    }
+    .dropdown-menu{
+        background-color: rgb(242, 243, 244, 0.9);
+        border: none;
+    }
+    .btn-secondary{
+        background-color: #fb6900;
+        border: none;
+        width: auto;
+        height: auto;
+        &:hover{
+            background-color: #ff6543;
+        }
+    }
+    .btn-secondary img{
+        width: 20px;
+    }
+    .bg-orange{
+        background-color: #fb6900;
+    }
+    .dropdown-item{
+        background-color: none;
+        &:hover{
+            background-color: #fb6900;
+        }
+    }
+    
+}
+@media (max-width: 700px){
+    .header-general{
+        height: 30vh;
+        h1{
+            font-size: 50px !important;
+        }
+        p{
+            display: none;
+        }
+    }
+}
+
+                                //------------------- breakpoint de la pagina restaurantes ----------------- //
+
+@media (max-width: 1180px){
+    .gastronomia{
+        flex-direction: column;
+        }
+}
+@media (max-width: 1500px){
+    #carouselRestaurant{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+@media (max-width: 600px){
+    .div-restaurant{
+        display: flex;
+            img{
+                max-width: 80%;
+                height: auto;
+            }
+    }
+}
+.div-restaurant{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px 10px;
+    padding: 20px 10px;
+    flex: 1 1 auto;
+}
+
+                                    //------------------- breakpoint de footer ----------------- //
+
+
+@media (max-width: 1000px){
+    .footer-content{
+        flex-flow: column nowrap;
+    }
+}
+
+                                    //------------------- breakpoint de pagina acerca ----------------- //
+
+@media (max-width: 1200px){
+    .videos-acerca-de{
+        flex-flow: column nowrap;
+        margin: 40px;
+    }
+    .info-acerca-de-sec{
+        flex-flow: column;
+    } 
+}
+@media (max-width: 660px){
+    .videos-acerca-de{
+        flex-flow: column nowrap;
+        margin: 40px;
+    }
+    .info-acerca-de-sec{
+        flex-flow: column;
+    } 
+    .img-acerca-de{
+        width: 50%;
+            img{
+                max-width: 70%;
+            }
+    }
+}
+
+                                     //------------------- breakpoint de pagina actividades ----------------- //
+
+@media (max-width: 1200px){
+    .inicio-act{
+        display: flex !important;
+        flex-flow: column nowrap;
+            .cont-card-menu-act{
+                transform: translate(0, 0) !important;
+                height: auto !important;
+                margin: 50px 0px;
+                display: inline-flex !important;
+                    .card-menu-act{
+                        justify-content: center;
+                        align-items: center;
+                        width: fit-content;
+                        width: 70%;
+                            .card-act{
+                                width: 25%;
+                                margin: 0px 50%;
+                                    .card-body-act{
+                                        width: fit-content;
+                                    }
+                            }
+                    }
+            }
+            .cont-img-act{
+                width: 90% !important;
+                margin: 0 !important;
+                height: auto !important;
+            }
+    }
+    .vr{
+        display: none;
+    }
+}
+@media (max-width: 900px){
+    #section-actividades{
+        display: flex;
+            .sec-actividades{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                align-items: center;
+                    .vr{
+                        margin: 50px;
+                    }
+                    .img-sec-actividades-rigth{
+                        max-width: 45%;
+                    }
+                    .img-sec-actividades-left{
+                        max-width: 45%;
+                    }
+                    .texto-sec-actividades{
+                        flex: 1 1 auto;
+                        text-align: center;
+                        padding: 0 100px;
+                            p{
+                                display: none;
+                            }
+                    }
+            }   
+    }
+    .firts-row{
+        display: none !important;
+    }
+}
+@media (max-width: 600px){
+    .nav-act-btn{
+        font-size: 18px !important;
+        padding: 20px 25px !important;
+    }
+    .img-sec-actividades-rigth{
+        max-width: 40%;
+    }
+    .img-sec-actividades-left{
+        max-width: 40%;
+    }
+    .texto-sec-actividades{
+        padding: 0 80px !important;
+    }
+}
+
+                       //------------------- breakpoint de pagina hoteles ----------------- //
+

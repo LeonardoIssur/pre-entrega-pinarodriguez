@@ -1,0 +1,124 @@
+.body-inicio{
+    margin: 0;
+    padding: 0;
+}
+
+#menuAventura{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 25px;
+    padding: 15px;
+    height: auto;
+    text-align: center;
+        .bg-aventura{
+            margin: 50px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: radial-gradient(circle at -14.09% 20.12%, #d9c15a 0, #e0b852 8.33%, #e5ae4b 16.67%, #eaa345 25%, #ee9641 33.33%, #f0883d 41.67%, #f2793c 50%, #f3683d 58.33%, #f35741 66.67%, #f34548 75%, #f33050 83.33%, #f1145a 91.67%, #ed0065 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            h3{
+                margin-top: 12px;
+            }
+            h2{
+                margin: 0px 20px;
+                font-size: 50px;
+                color: transparent;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        .container-inicio{
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            gap: 25%;
+            text-align: center;
+            justify-content: space-between;
+            height: auto;
+                .infor{
+                    flex: 1 1 auto;
+                        h3{
+                            margin: 30px;
+                        }
+                        img{
+                            width: 70%;
+                            height: 50%;
+                        }  
+                }              
+        }
+}
+.cont-formulario{
+    width: 100%;
+    height: auto;
+    background-color: #ff9000;
+        .formulario_img{
+            background-image: url(../imagenes/wave\ \(18\).svg);
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 420px;
+            margin-bottom: -446px;
+        }
+        .formulario_img_abajo{
+            background-image: url(../imagenes/wave\ \(17\).svg);
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 420px;
+            margin-top: -446px;
+        }
+        .formulario {
+            max-width: 400px;
+            margin: 80px auto;
+            padding: 20px;
+            border-radius: 30px;
+            background-color: rgb(0, 0, 0, 0.3);
+            margin-left: 120px;
+            position: relative;
+            color: #fff;
+            font-size: 18px;
+                h2{
+                    font-size: 36px;
+                }
+                label,.formulario input,.formulario textarea{
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 25px;
+                    padding: 10px;
+                }   
+                input[type="text"],.formulario input[type="email"]{
+                    padding: 10px;
+                    border-radius: 5px;
+                    border: none;
+                    width: 100%;
+                }
+                textarea {
+                    padding:12px;
+                    border-radius: 5px;
+                    width: 100%;
+                }
+                button {
+                    font-size: 22px;
+                    background-color: $color-primary;
+                    color: #fff;
+                    border: none;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    width: 100%;
+                    margin-top: 20px;
+                    &:hover{
+                        background-color: $color-secondary;
+                    }
+                }
+        }
+}
+
+
+
+

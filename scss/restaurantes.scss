@@ -1,0 +1,126 @@
+#restaurant{
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "headerRestaurant headerRestaurant headerRestaurant headerRestaurant headerRestaurant"
+    "mainRestaurant mainRestaurant mainRestaurant mainRestaurant mainRestaurant"
+    "carouselRestaurant carouselRestaurant carouselRestaurant carouselRestaurant carouselRestaurant "
+    "footerRestaurant footerRestaurant footerRestaurant footerRestaurant footerRestaurant"
+    ;
+}
+.header-restaurant{
+    grid-area: headerRestaurant;
+    width: 100%;
+}
+.main-restaurant{
+    background-color: #fff2d4;
+    grid-area: mainRestaurant;
+    width: 100%;
+        .gastronomia{
+            display: flex;
+            margin: 20px;
+        .info-restaurant p{
+            width: 40%;
+        }
+        .info-restaurant h2{
+            font-size: 4vw;
+            font-size: 4vh;
+        }
+        @if $color-primary == #ff4800 {
+            $color-secondary: #000 ;
+        }
+        .btn-ver-mas{
+            margin: 10px 30px;
+            padding: 10px 30px;
+            background-color: $color-primary;
+            border: none;
+            border-radius: 12px;
+            color: #fff;
+            font-size: 18px;
+            &:hover{
+                background-color: $color-secondary;
+            }
+        }
+        .div-restaurant{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 20px 10px;
+            padding: 20px 10px;
+            flex: 1 1 auto;
+        }
+        }
+}
+#carouselRestaurant{
+    display: flex;
+    padding: 7vh 5vh;
+    background-image: url(../imagenes/img-fondo-carrousel-restaurant.jpeg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: carouselRestaurant;
+    margin-bottom: 12px;
+    width: 100%;
+        .card-restaurant{
+            flex: 1 1 auto;
+            margin: 2vw;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            background-color: rgb(0, 0 , 0 , 0.5);
+            border-radius: 12px;
+            height: min-content;
+                .card-body-restaurant{
+                    border: none;
+                    color: #fff;
+                    height: auto;
+                        .card-img-top{
+                            width: 100%;
+                            height: 350px;
+                        }
+                        .stars{
+                            display: flex;
+                            width: 100%;
+                            margin: 10px;
+                            height: 30px;
+                        }
+                        .icon-card-restuarant{
+                            @extend .stars;
+                        }
+                        .card-title{
+                            margin: 15px 0px;
+                            font-size: 3.5vh;
+                        }
+                        .card-img-top{
+                            margin-top: 3% !important;
+                        }
+                        .btn-restaurant{
+                        background-color: $color-primary;
+                        border: none;
+                        margin-top: 5%;
+                        &:hover{
+                            background-color: $color-secondary;
+                        }
+                        }
+                        .btn-restaurant-ver-mas{
+                            @extend .btn-restaurant;
+                            background-color: rgb(250, 215, 160 , 0.2);
+                            &:hover{
+                                background-color: rgb(250, 215, 160 , 0.4);
+                            }
+                        }
+                        .card{
+                            background-color: rgb(250, 215, 160 , 0.2);
+                        }
+
+                }
+        }
+}
+.footer-restaurant{
+    grid-area: footerRestaurant;
+}

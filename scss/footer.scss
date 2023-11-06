@@ -1,0 +1,36 @@
+footer{
+    margin: 25px;
+    align-items: center;
+
+    h2{
+        margin-top: 50px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .footer-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .footer-sec{
+            text-align: center;
+            margin: 15px;
+            padding: 10px;
+            flex: 1 1 auto;
+
+                h4{
+                    margin-left: 25px;
+                }
+                ul,li,a{
+                    color: #001f36;
+                    list-style-type: none;
+                    text-decoration: none;
+                    &:hover{
+                        color: #ccc;
+                    }
+                }
+        }
+    }
+}
+

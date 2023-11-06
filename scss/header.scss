@@ -1,0 +1,73 @@
+.header-general{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    margin: 0px !important;
+    text-align: center;
+    padding: 8% 15%;
+    justify-content: center;
+    align-items: center;
+        .titulo-inicio{
+            width: auto;
+            h1{
+                font-size: 80px;
+                color: #fff;
+            }
+            p{  
+                padding: 0px 15%;
+                font-size: 20px;
+                color: #fff;
+            }
+        }
+        .navbar{
+            background-color: #fff;
+            list-style-type: none;
+            position: fixed;
+            padding: 15px;
+            margin: 0;
+            top: 0;
+            right: 0;
+            border-bottom-left-radius: 8px;
+            z-index: 3000;
+                li{
+                    list-style-type: none;
+                    display: inline;
+                    text-align: center;
+                    margin: -12px 17px !important;
+                    padding: 10px 10px !important;
+                    &:hover{
+                        background-color: #ff6543;
+                        border-radius: 10px;
+                        color: #fff;
+                    }
+                        a{
+                            display: inline-block;
+                            text-decoration: none;
+                            color: black;
+                            text-align: center;
+                            font-size: 18px;
+                            &:hover{
+                                color: #fff;
+                            }
+                        }
+                }
+        }
+}
+.header-inicio{
+    background-image: url(../imagenes/gb-header-inicio.jpeg);
+}
+.header-restaurant{
+    background-image: url(../imagenes/img-header-restaurant.jpeg);
+}
+.header-hoteles{
+    background-image: url(../imagenes/img-header-hoteles.jpeg);
+}
+.header-actividades{
+    background-image: url(../imagenes/header-actividades.jpg);
+}
+.header-acerca-de{
+    background-image: url(../imagenes/header-aceca-de.jpeg);
+}
+

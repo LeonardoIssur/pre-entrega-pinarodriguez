@@ -1,0 +1,128 @@
+@mixin media-query-tablet{
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+@mixin media-query-mobile{
+    @media (max-width: 700px) {
+        @content;
+    }
+}
+
+#menuBusquedaHoteles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        .btn-categorias-hoteles{
+            display: none;
+            @include media-query-mobile() {
+                    display: flex !important;
+                    width: 100%;
+                }
+            .offcanvas{
+                max-width: 250px;
+           }
+           .btn-categorias{
+               background-color: $color-primary;
+               border: none;
+               margin: 30px;
+               margin-right: 53%;
+               padding: 10px 30px;
+               font-size: 20px;
+               display: flex;
+                   &:hover{
+                       background-color: $color-secondary;
+                   }
+           }
+        }
+        .formulario-busqueda-hoteles{
+            display: flex;
+            margin: 50px;
+            width: 70%;
+            justify-content: center;
+            align-items: center;
+            @include media-query-tablet(){
+                flex-direction: column;
+                width: 90% !important;
+            }
+                .content-sec-busqueda{
+                    display: flex;
+                    flex: 1 1 auto;
+                    justify-content: center;
+                    align-items: center;
+                        .btn-buscar-hoteles{
+                            color: #fff;
+                            background-color: $color-primary;
+                            padding: 5px 25px;
+                            font-size: 18px;
+                            border: none;
+                            border-radius: 12px;
+                            &:hover{
+                                background-color: $color-secondary;
+                            }
+                        }
+                        .sec-busqueda{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            margin: 0 10px;
+                            cursor: pointer;
+                            .inf-busqueda{
+                                margin: 0px 20px;
+                                padding: 0 10px;
+                            }
+                                img{
+                                    width: 50px;
+                                    height: auto;
+                                }
+                        }
+                }
+        }
+                
+}
+#paginasHoteles{
+    display: flex;
+    height: auto;
+    padding: 10px;
+        .sec-hoteles{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+        flex: 4 1 auto !important;
+            .card-hotel{
+                margin: 10px 20px;
+            }
+        }
+        .list-categorias{
+            flex: 1 1 auto;
+            @include media-query-mobile() {
+                    display: none !important;
+                }
+                .list-categorias-float{
+                    padding: 0 100px;
+                    position: sticky;
+                    top: 200px;
+                }
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+                h2{
+                    color: black;
+                }
+        }
+}
+
+.paginas{
+    margin: 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
