@@ -94,9 +94,26 @@
         display: flex;
         flex-flow: row wrap;
         flex: 4 1 auto !important;
+            .btn-reservar{
+                flex-flow: row;
+            }
             .card-hotel{
                 margin: 10px 20px;
+                    .btn-reservar{
+                        margin: 0 12px;
+                        color: #fff;
+                        background-color: $color-primary;
+                        border-radius: 12px;
+                        font-size: 18px;
+                        padding: 5px 15px;
+                        border: none;
+                        &:hover{
+                            background-color: $color-secondary;
+                            transform: scale(110% , 110%);
+                        }
+                    }
             }
+
         }
         .list-categorias{
             flex: 1 1 auto;
@@ -111,6 +128,9 @@
                 a{
                     text-decoration: none;
                     color: black;
+                    &:hover{
+                        color: #c4c8c5;
+                    }
                 }
                 h2{
                     color: black;

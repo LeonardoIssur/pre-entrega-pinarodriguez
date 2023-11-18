@@ -146,6 +146,9 @@
         flex-flow: column nowrap;
         margin: 40px;
     }
+    p{
+        display: none;
+    }
     .info-acerca-de-sec{
         flex-flow: column;
     } 
@@ -224,9 +227,15 @@
     }
 }
 @media (max-width: 600px){
+    .cont-img-act{
+        display: none !important;
+    }
+    .cont-card-menu-act{
+        width: 100%;
+    }
     .nav-act-btn{
         font-size: 18px !important;
-        padding: 20px 25px !important;
+        padding: 20px 20px !important;
     }
     .img-sec-actividades-rigth{
         max-width: 40%;

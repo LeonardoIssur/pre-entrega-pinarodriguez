@@ -439,8 +439,24 @@ footer .footer-content .footer-sec ul:hover, footer .footer-content .footer-sec 
   flex-flow: row wrap;
   flex: 4 1 auto !important;
 }
+#paginasHoteles .sec-hoteles .btn-reservar {
+  flex-flow: row;
+}
 #paginasHoteles .sec-hoteles .card-hotel {
   margin: 10px 20px;
+}
+#paginasHoteles .sec-hoteles .card-hotel .btn-reservar {
+  margin: 0 12px;
+  color: #fff;
+  background-color: #ff4800;
+  border-radius: 12px;
+  font-size: 18px;
+  padding: 5px 15px;
+  border: none;
+}
+#paginasHoteles .sec-hoteles .card-hotel .btn-reservar:hover {
+  background-color: #ff9000;
+  transform: scale(110%, 110%);
 }
 #paginasHoteles .list-categorias {
   flex: 1 1 auto;
@@ -458,6 +474,9 @@ footer .footer-content .footer-sec ul:hover, footer .footer-content .footer-sec 
 #paginasHoteles .list-categorias a {
   text-decoration: none;
   color: black;
+}
+#paginasHoteles .list-categorias a:hover {
+  color: #c4c8c5;
 }
 #paginasHoteles .list-categorias h2 {
   color: black;
@@ -846,6 +865,9 @@ footer .footer-content .footer-sec ul:hover, footer .footer-content .footer-sec 
     flex-flow: column nowrap;
     margin: 40px;
   }
+  p {
+    display: none;
+  }
   .info-acerca-de-sec {
     flex-flow: column;
   }
@@ -921,9 +943,15 @@ footer .footer-content .footer-sec ul:hover, footer .footer-content .footer-sec 
   }
 }
 @media (max-width: 600px) {
+  .cont-img-act {
+    display: none !important;
+  }
+  .cont-card-menu-act {
+    width: 100%;
+  }
   .nav-act-btn {
     font-size: 18px !important;
-    padding: 20px 25px !important;
+    padding: 20px 20px !important;
   }
   .img-sec-actividades-rigth {
     max-width: 40%;
