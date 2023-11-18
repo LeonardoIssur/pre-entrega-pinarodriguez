@@ -865,11 +865,11 @@ footer .footer-content .footer-sec ul:hover, footer .footer-content .footer-sec 
     flex-flow: column nowrap;
     margin: 40px;
   }
-  p {
-    display: none;
-  }
   .info-acerca-de-sec {
     flex-flow: column;
+  }
+  .info-acerca-de-sec p {
+    display: none !important;
   }
   .img-acerca-de {
     width: 50%;

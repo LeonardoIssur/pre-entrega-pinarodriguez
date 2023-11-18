@@ -146,11 +146,11 @@
         flex-flow: column nowrap;
         margin: 40px;
     }
-    p{
-        display: none;
-    }
     .info-acerca-de-sec{
         flex-flow: column;
+            p{
+                display: none !important;
+            }
     } 
     .img-acerca-de{
         width: 50%;
